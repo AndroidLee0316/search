@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/search_white"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="@dimen/search_item_padding"
+        android:paddingRight="@dimen/search_item_padding"
+        android:paddingTop="6dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:src="@drawable/search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.pasc.business.search.customview.ClearEditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_edit_bg"
+            android:drawableLeft="@drawable/search_edit_icon"
+            android:gravity="left|center_vertical"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLength="16"
+            android:maxEms="16"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/search_text_cursor"
+            android:textColor="@color/search_333333"
+            android:textColorHint="#c7c7c7"
+            android:textSize="@dimen/search_mid_size" />
+
+        <TextView
+            android:id="@+id/tv_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="取消"
+            android:visibility="visible"
+            android:textColor="@color/search_27A5F9"
+            android:textSize="@dimen/search_big_size" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_line_height"
+        android:background="@color/search_bg_color" />
+
+    <RelativeLayout
+        android:id="@+id/rv_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- 搜索历史与热门搜索-->
+        <LinearLayout
+            android:background="@color/search_bg_color"
+            android:id="@+id/ll_keyword_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/ll_assign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/search_white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_search_assign"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="@string/search_assign_text"
+                    android:textColor="#999999"
+                    android:textSize="@dimen/search_small_size" />
+
+                <com.pasc.business.search.customview.MyGridView
+                    android:id="@+id/gv_assign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="4"
+                    android:paddingBottom="25dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/search_bg_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_history_tip"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/search_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/search_item_padding"
+                android:paddingRight="@dimen/search_item_padding"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_history"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/search_history_text"
+                    android:textColor="@color/search_999999"
+                    android:textSize="@dimen/search_small_size" />
+
+                <ImageView
+                    android:id="@+id/iv_search_history_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_history_del" />
+
+            </LinearLayout>
+
+            <com.pasc.business.search.customview.flowlayout.TagFlowLayout
+                android:background="@color/search_white"
+                android:id="@+id/flow_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="9dp"
+                android:paddingLeft="@dimen/search_item_padding"
+                android:paddingRight="@dimen/search_item_padding"
+                android:visibility="gone"
+                app:auto_select_effect="false"
+                app:gravity="left" />
+
+            <!-- 热门搜索-->
+
+            <TextView
+                android:id="@+id/tv_hot_search"
+                android:paddingTop="9dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center_vertical"
+                android:background="@color/search_white"
+                android:paddingLeft="@dimen/search_item_padding"
+                android:text="@string/search_hot_text"
+                android:textColor="@color/search_999999"
+                android:textSize="@dimen/search_small_size"
+                android:visibility="gone" />
+
+            <com.pasc.business.search.customview.MyGridView
+                android:id="@+id/gv_search_hot"
+                android:layout_width="match_parent"
+                android:background="@color/search_white"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:paddingBottom="4dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:background="@color/search_bg_color"
+            android:layout_height="match_parent"
+            android:visibility="gone"></FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

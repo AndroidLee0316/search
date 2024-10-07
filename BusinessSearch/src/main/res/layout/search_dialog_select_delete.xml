@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_white_dialog_bg"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/temp_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#030303"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/temp_tv_context"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="确认删除全部历史记录？"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#2E332F"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="20dp"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/temp_tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/search_selector_button_common"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#8d8d8d"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/temp_view"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#dddddd" />
+
+        <TextView
+            android:id="@+id/temp_tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/search_selector_button_common"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/search_main_color"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

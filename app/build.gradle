@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+//        applicationId "com.search.demo"
+//        applicationId "com.pingan.demo.paspeechsdk"
+//        applicationId "com.pingan.smt"
+        applicationId "com.pingan.smt.test"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //指定测试的keystore，测试体验请使用该keystore
+    signingConfigs {
+//        debug {
+//            keyAlias 'PASpeechSDK_debug'
+//            keyPassword 'paspeechsdk'
+//            storeFile file('./testSDK.keystore')
+//            storePassword 'paspeechsdk'
+//        }
+        debug {
+            storeFile file('keystore.jks')
+            storePassword "pa123456"
+            keyAlias "smt"
+            keyPassword "pa123456"
+            v2SigningEnabled true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:${supportLibraryVersion}"
+    implementation "io.reactivex.rxjava2:rxjava:${rxjava2Version}"
+    implementation "io.reactivex.rxjava2:rxandroid:${rxandroid2Version}"
+    implementation "com.android.support:recyclerview-v7:${supportLibraryVersion}"
+    implementation "com.android.support:design:${supportLibraryVersion}"
+    implementation "com.google.code.gson:gson:${gsonVersion}"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation "com.zxs.business:search:1.0.0"
+//    implementation  "com.pasc.business:search:${aarBusinessSearchVersion}"
+    implementation "com.zxs.lib:imaeLoader:1.0.0"
+    api 'com.github.AndroidLee0316:zxs_net:support_2.0.0'
+    implementation "com.android.support:multidex:1.0.2"
+    implementation "com.github.Raizlabs.DBFlow:dbflow-core:$dbflowVersion"
+    implementation "com.github.Raizlabs.DBFlow:dbflow:$dbflowVersion"
+    implementation("com.github.Raizlabs.DBFlow:dbflow-rx2:$dbflowVersion") {
+        exclude module: 'rxjava'
+    }
+}

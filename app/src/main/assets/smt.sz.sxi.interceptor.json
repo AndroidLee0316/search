@@ -1,0 +1,456 @@
+{
+    "items": [
+        {
+            "H5Info": {
+                "productionURL": "https://weixin.szzfgjj.com/WheatInterface/index.html?view=my-account&cityid=440300&from=singlemessage",
+                "showCloseButton": false,
+                "debugURL": "https://weixin.szzfgjj.com/WheatInterface/index.html?view=my-account&cityid=440300&from=singlemessage",
+                "useNativeNavigationBar": true,
+                "customWebTitle": "公积金查询",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "个人版首页-常用服务-公积金",
+            "identifier": "Service.SocialSecurity.CPFInquiry",
+            "nativePage": "BindingMyHousingFund",
+            "checkLocationPermission": false,
+            "name": "公积金",
+            "needLogin": true,
+            "label": "",
+            "type": "Native",
+            "verifyTokenByServer": false,
+            "keyWord": "公积金"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10004/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10004/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": true,
+                "customWebTitle": "社保查询",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "个人版首页-常用服务-社保",
+            "identifier": "01_Other_SocialSecurity",
+            "nativePage": "",
+            "checkLocationPermission": false,
+            "icon": "http://smt-cdn.yun.city.pingan.com/isz/app/icon/homepage/20190318/shebao.png",
+            "name": "社保",
+            "needLogin": true,
+            "label": "",
+            "type": "ButtedH5",
+            "verifyTokenByServer": true,
+            "keyWord": "社保"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://paweb.sze511.com/jtzs_web/index.html#/bus?sourcename=iShenZhen",
+                "showCloseButton": false,
+                "debugURL": "https://paweb.sze511.com/jtzs_web/index.html#/bus?sourcename=iShenZhen",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "实时公交",
+                "dynamicTitleEnable": false
+            },
+            "identifier": "01_Other_Foodsafetyexamination",
+            "nativePage": "RealTimeBus",
+            "checkLocationPermission": true,
+            "name": "实时公交",
+            "needLogin": false,
+            "canShow": true,
+            "label": "",
+            "title": "实时公交",
+            "verifyTokenByServer": false,
+            "keyWord": "公交"
+        },
+        {
+            "eventId": "个人版首页-常用服务-乘车码",
+            "identifier": "Service.NetHall",
+            "extension": "4",
+            "nativePage": "MainTabSelect",
+            "checkLocationPermission": false,
+            "icon": "http://iobs.pingan.com.cn/download/szsc-smt-app-dmz-prd/a6c80aef-14a4-41b4-8099-08f19c0345cb_1543889325735",
+            "needLogin": false,
+            "label": "",
+            "type": "Native",
+            "verifyTokenByServer": false,
+            "keyWord": "乘车",
+            "H5Info": {},
+            "name": "乘车码"
+        },
+        {
+            "eventId": "个人版首页-天气",
+            "identifier": "Service.NetHall",
+            "extension": "4",
+            "nativePage": "Weather",
+            "checkLocationPermission": false,
+            "icon": "http://iobs.pingan.com.cn/download/szsc-smt-app-dmz-prd/a6c80aef-14a4-41b4-8099-08f19c0345cb_1543889325735",
+            "needLogin": false,
+            "label": "",
+            "type": "Native",
+            "verifyTokenByServer": false,
+            "keyWord": "天气",
+            "H5Info": {},
+            "name": "天气"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://apply.jtys.sz.gov.cn/apply/app/common/mobile/ballot/apply/increment",
+                "showCloseButton": false,
+                "debugURL": "https://apply.jtys.sz.gov.cn/apply/app/common/mobile/ballot/apply/increment",
+                "useNativeNavigationBar": true,
+                "customWebTitle": "摇号",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "个人版首页-常用服务-摇号",
+            "identifier": "Service.TrafficPolice.GetCarNumber",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "摇号",
+            "needLogin": false,
+            "label": "",
+            "type": "ButtedH5",
+            "verifyTokenByServer": false,
+            "keyWord": "摇号"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://apply.jtys.sz.gov.cn/apply/app/common/mobile/ballot/apply/increment",
+                "showCloseButton": false,
+                "debugURL": "https://apply.jtys.sz.gov.cn/apply/app/common/mobile/ballot/apply/increment",
+                "useNativeNavigationBar": true,
+                "customWebTitle": "竞价",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "个人版首页-常用服务-竞价",
+            "identifier": "Service.TrafficPolice.GetCarNumber",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "摇号",
+            "needLogin": false,
+            "label": "",
+            "type": "ButtedH5",
+            "verifyTokenByServer": false,
+            "keyWord": "竞价"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://mysz.szjj.sz.gov.cn:8080/szjjwxyw_mysz/szjj/szjj_checkJJyw.action?lrly=pamysz&sqm=sqm&ywlx=wfxxsscx&sfzhm=sfzhm&sjh=sjh",
+                "showCloseButton": false,
+                "debugURL": "https://mysz.szjj.sz.gov.cn:8080/szjjwxyw_mysz/szjj/szjj_checkJJyw.action?lrly=pamysz&sqm=sqm&ywlx=wfxxsscx&sfzhm=sfzhm&sjh=sjh",
+                "useNativeNavigationBar": true,
+                "customWebTitle": "车辆违章",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "个人版首页-常用服务-交通违法处理",
+            "identifier": "Service.CarsAndTravel.VehicleViolation",
+            "nativePage": "StaruserWebservice",
+            "checkLocationPermission": false,
+            "name": "车辆违章",
+            "needLogin": false,
+            "label": "车主用户",
+            "type": "Native",
+            "verifyTokenByServer": false,
+            "keyWord": "违章,违法"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://mysz.szjj.sz.gov.cn:8080/szjjwxyw_mysz/szjj/szjj_checkJJyw.action?ywlx=dzjszcx&lrly=pamysz&sqm=sqm&sfzhm=sfzhm&sjh=sjh",
+                "showCloseButton": false,
+                "debugURL": "https://mysz.szjj.sz.gov.cn:8080/szjjwxyw_mysz/szjj/szjj_checkJJyw.action?ywlx=dzjszcx&lrly=pamysz&sqm=sqm&sfzhm=sfzhm&sjh=sjh",
+                "useNativeNavigationBar": true,
+                "customWebTitle": "电子驾驶证",
+                "dynamicTitleEnable": true
+            },
+            "eventId": "个人版首页-智慧交通-电子驾驶证",
+            "identifier": "04_Certificates_DrivingLicense",
+            "nativePage": "StaruserWebservice",
+            "checkLocationPermission": false,
+            "name": "电子驾驶证",
+            "needLogin": false,
+            "label": "电子驾驶证",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "驾驶证"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://mysz.szjj.sz.gov.cn:8080/szjjwxyw_mysz/szjj/szjj_checkJJyw.action?ywlx=dzxszcx&lrly=pamysz&sqm=sqm&sfzhm=sfzhm&sjh=sjh",
+                "showCloseButton": false,
+                "debugURL": "https://mysz.szjj.sz.gov.cn:8080/szjjwxyw_mysz/szjj/szjj_checkJJyw.action?ywlx=dzxszcx&lrly=pamysz&sqm=sqm&sfzhm=sfzhm&sjh=sjh",
+                "useNativeNavigationBar": true,
+                "customWebTitle": "电子行驶证",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "个人版首页-智慧交通-电子行驶证",
+            "identifier": "04_Certificates_DrivingPermit",
+            "nativePage": "StaruserWebservice",
+            "checkLocationPermission": false,
+            "icon": "http://iobs.pingan.com.cn/download/szsc-smt-app-dmz-prd/235acdee-a5ac-4cc1-a926-24b96f3c86f2_1531381894417",
+            "name": "电子行驶证",
+            "needLogin": false,
+            "label": "电子行驶证",
+            "type": "ButtedH5",
+            "verifyTokenByServer": false,
+            "keyWord": "行驶证"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://yuyue.yun.city.pingan.com/yuyue/index.html?openweb=oldhybrid",
+                "showCloseButton": false,
+                "debugURL": "https://yuyue.yun.city.pingan.com/yuyue/index.html?openweb=oldhybrid",
+                "useNativeNavigationBar": true,
+                "customWebTitle": "预约通行",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "个人版首页-上新服务-预约通行",
+            "identifier": "Service.TrafficPolice.GetCarNumber",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "预约通行",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "预约通行,仙湖,大鹏,梅沙"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10066/?uiparams=%7B%22isHide%22%3Atrue,%22isWebImmersive%22%3Atrue%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10066/?uiparams=%7B%22isHide%22%3Atrue,%22isWebImmersive%22%3Atrue%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "公安局",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "公安局,交警局,出入境"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10044/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10044/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "住建局",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "住建局,住房和建设局"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10004/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10004/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "人社局",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "人社局,人力资源保障局,人力资源和社会保障局"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10011/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10011/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "交通运输局",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "交委,交通运输局,运输局"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/feature/lvyouju-service/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/feature/lvyouju-service/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "文体旅游局",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "文体旅游局,文化广电旅游体育局"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10008/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10008/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "发改委",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "发改委,发展和改革委员会"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10026/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10026/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "科创委",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "科创委,科技创新委员会"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10005/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10005/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "卫健委",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "卫健委,卫生健康委员会"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/feature/qixiang-service/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/feature/qixiang-service/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "气象局",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "气象局"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10027/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10027/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "生态环境局",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "生态环境局"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10007/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10007/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "市场监管局",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "市场监管局,市场监督管理局"
+        },
+        {
+            "H5Info": {
+                "productionURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10019/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "showCloseButton": false,
+                "debugURL": "https://isz-web.sz.gov.cn/sz/app/jimu/10019/?uiparams=%7B%22isHide%22:true,%22isWebImmersive%22:true%7D#/",
+                "useNativeNavigationBar": false,
+                "customWebTitle": "",
+                "dynamicTitleEnable": false
+            },
+            "eventId": "",
+            "identifier": "",
+            "extension": "0",
+            "checkLocationPermission": false,
+            "name": "规划和自然资源局",
+            "needLogin": false,
+            "label": "",
+            "type": "CommonH5",
+            "verifyTokenByServer": false,
+            "keyWord": "规划和自然资源局"
+        }
+    ]
+}

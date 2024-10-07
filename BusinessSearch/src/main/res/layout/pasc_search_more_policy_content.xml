@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="45dp"
+        android:background="@color/search_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_count_tip"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@color/search_999999"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/line_policy"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/search_bg_color" />
+
+        <com.pasc.business.search.customview.StatusView
+            android:id="@+id/statusView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/search_white">
+
+            <com.pasc.business.search.customview.MySwipeRefreshLayout
+                android:id="@+id/refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.pasc.business.search.customview.HideBoardRecycleView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.pasc.business.search.customview.MySwipeRefreshLayout>
+        </com.pasc.business.search.customview.StatusView>
+    </LinearLayout>
+
+    <com.pasc.business.search.customview.DropDownMenu
+        android:id="@+id/dropDownMenu"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:dddividerColor="@color/search_bg_color"
+        app:ddmaskColor="@color/search_mask_color"
+        app:ddmenuBackgroundColor="@color/search_white"
+        app:ddmenuMenuHeightPercent="0.5"
+        app:ddmenuSelectedIcon="@drawable/search_down_unselected"
+        app:ddmenuTextSize="@dimen/search_mid_size"
+        app:ddmenuUnselectedIcon="@drawable/search_down_selected"
+        app:ddtextSelectedColor="@color/search_drop_down_selected"
+        app:ddtextUnselectedColor="@color/search_drop_down_unselected"
+        app:ddunderlineColor="@color/search_bg_color" />
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="8dp"
+    android:clickable="true"
+    android:layout_marginLeft="8dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_voice_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/voice_anim_top_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <com.pasc.business.search.customview.gifview.GifImageView
+            android:id="@+id/iv_robot_icon"
+            android:layout_width="32dp"
+            android:layout_height="26dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_robot_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="深小i正在听"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_robot_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="更多技巧"
+            android:textColor="#99ffffff"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#99ffffff"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_robot_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="#99ffffff"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_voice_container"
+            android:background="@drawable/voice_anim_bottom_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rv_voice_anim"
+                android:layout_width="match_parent"
+                android:layout_height="96dp">
+
+                <com.pasc.business.voice.WaveView
+                    android:id="@+id/waveView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="你可以这么说"
+                        android:visibility="gone"
+                        android:textColor="#99ffffff"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="公积金查询"
+                        android:visibility="gone"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_tmp_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/ll_voice_footer"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"></View>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

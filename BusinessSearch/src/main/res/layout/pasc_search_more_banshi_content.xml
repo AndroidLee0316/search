@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:background="@color/search_white"
+        android:layout_height="match_parent"
+        android:paddingTop="45dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_count_tip"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textColor="@color/search_999999"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/banshi_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#e8e8e8" />
+
+        <com.pasc.business.search.customview.StatusView
+            android:id="@+id/statusView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/search_white">
+
+            <com.pasc.business.search.customview.MySwipeRefreshLayout
+                android:id="@+id/refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.pasc.business.search.customview.HideBoardRecycleView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.pasc.business.search.customview.MySwipeRefreshLayout>
+        </com.pasc.business.search.customview.StatusView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.pasc.business.search.customview.DropDownMenu
+            android:id="@+id/multiPick_dropDownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dddividerColor="@color/search_bg_color"
+            app:ddmaskColor="@color/search_mask_color"
+            app:ddtextDisableColor="@color/search_999999"
+            app:ddmenuBackgroundColor="@color/search_white"
+            app:ddmenuMenuHeightPercent="0.5"
+            app:ddmenuSelectedIcon="@drawable/search_down_unselected"
+            app:ddmenuTextSize="@dimen/search_mid_size"
+            app:ddmenuDisableIcon="@drawable/search_disable_icon"
+            app:ddmenuUnselectedIcon="@drawable/search_down_selected"
+            app:ddtextSelectedColor="@color/search_drop_down_selected"
+            app:ddtextUnselectedColor="@color/search_drop_down_unselected"
+            app:ddunderlineColor="@color/search_bg_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#00000000"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkOnline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/search_white"
+                    android:button="@drawable/search_check_selector"
+                    android:clickable="true"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:minWidth="95dp"
+                    android:text="可在线申办"
+                    android:textColor="@color/search_333333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<dimen name="search_line_height">1dp</dimen>
+
+    <dimen name="search_item_height">56dp</dimen>
+    <dimen name="search_item_padding">15dp</dimen>
+    <dimen name="search_item_padding_right">12dp</dimen>
+
+
+    <dimen name="search_big_size">17sp</dimen>
+    <dimen name="search_mid_size">15sp</dimen>
+    <dimen name="search_small_size">13sp</dimen>
+
+</resources>

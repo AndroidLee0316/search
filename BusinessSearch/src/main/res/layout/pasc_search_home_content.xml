@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.pasc.business.search.customview.StatusView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statusView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/search_white">
+
+    <com.pasc.business.search.customview.HideBoardRecycleView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:background="@color/search_bg_color"
+        android:layout_height="match_parent" />
+
+
+</com.pasc.business.search.customview.StatusView>

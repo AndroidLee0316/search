@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ll_title"
+        layout="@layout/pasc_search_title_item"></include>
+
+    <com.pasc.business.search.customview.ItemListView
+        android:id="@+id/list_item"
+        android:dividerHeight="0dp"
+        android:divider="@color/search_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include
+        android:id="@+id/ll_more"
+        layout="@layout/pasc_search_more_item"></include>
+    <include layout="@layout/pasc_search_divider_item" />
+
+</LinearLayout>

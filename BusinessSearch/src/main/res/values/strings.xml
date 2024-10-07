@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BusinessSearch</string>
+
+    <string name="search_assign_text">搜索指定内容</string>
+    <string name="search_history_text">历史搜索</string>
+    <string name="search_hot_text">热门搜索</string>
+    <string name="search_load_end">没有更多结果了</string>
+    <string name="search_load_failed">加载失败，请点我重试</string>
+    <string name="search_loading">努力搜索中</string>
+    <string name="search_retry">重新加载</string>
+    <string name="search_confirm">确定</string>
+    <string name="search_cancel">取消</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_count_tip"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:background="@color/search_white"
+        android:visibility="gone"
+        android:textColor="@color/search_999999" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/search_bg_color" />
+    <com.pasc.business.search.customview.StatusView
+        android:id="@+id/statusView"
+        android:background="@color/search_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.pasc.business.search.customview.MySwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.pasc.business.search.customview.HideBoardRecycleView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.pasc.business.search.customview.MySwipeRefreshLayout>
+    </com.pasc.business.search.customview.StatusView>
+
+</LinearLayout>

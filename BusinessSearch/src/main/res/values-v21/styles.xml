@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme：Theme.smt 【这个最好放LibWidget库里面，这里只做重载】 -->
+    <style name="searchAppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!--Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/search_white</item>
+        <item name="android:windowBackground">@color/search_white</item>
+
+
+    </style>
+
+</resources>

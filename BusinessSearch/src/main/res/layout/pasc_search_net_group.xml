@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/ll_title"
+        layout="@layout/pasc_search_title_item"></include>
+    <include
+        android:id="@+id/ll_one"
+        layout="@layout/pasc_search_net_item"></include>
+
+    <include
+        android:id="@+id/ll_two"
+        layout="@layout/pasc_search_net_item"></include>
+
+    <include
+        android:id="@+id/ll_three"
+        layout="@layout/pasc_search_net_item"></include>
+
+    <include
+        android:id="@+id/ll_more"
+        layout="@layout/pasc_search_more_item"></include>
+    <include layout="@layout/pasc_search_divider_item" />
+
+</LinearLayout>

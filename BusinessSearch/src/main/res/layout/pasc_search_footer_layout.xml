@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/footer_default"
+        android:layout_width="match_parent"
+        android:background="@drawable/search_item_selector"
+        android:layout_height="68dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_footer_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/search_item_padding"
+            android:scaleType="fitXY"
+            android:src="@drawable/search_net_search_icon" />
+
+        <TextView
+            android:id="@+id/tv_footer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/iv_footer_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="点击搜索人相关信息"
+            android:textColor="@color/search_333333"
+            android:textSize="@dimen/search_big_size" />
+
+        <TextView
+            android:id="@+id/tv_footer_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_footer_title"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/iv_footer_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="支持所有部门服务、办事指南、政策法规"
+            android:textColor="@color/search_999999"
+            android:textSize="@dimen/search_small_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_loading"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_loading"
+            android:textColor="@color/search_999999"
+            android:textSize="@dimen/search_small_size" />
+
+        <ProgressBar
+            android:id="@+id/progress_footer"
+            android:layout_marginLeft="6dp"
+            android:layout_width="20dp"
+            android:indeterminateDrawable="@drawable/search_loading_drawable"
+            android:indeterminateOnly="true"
+            android:indeterminateBehavior="repeat"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_error"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="网络搜索失败，请检查网络设置"
+            android:textColor="@color/search_999999"
+            android:textSize="@dimen/search_mid_size" />
+        <TextView
+            android:id="@+id/btn_footer_retry"
+            android:layout_width="116dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:text="@string/search_retry"
+            android:textColor="@color/search_333333"
+            android:textSize="@dimen/search_big_size"
+            android:background="@drawable/search_white_round_bg"
+            android:layout_height="44dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/footer_no_more"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/search_load_end"
+            android:textSize="@dimen/search_mid_size"
+            android:textColor="@color/search_999999"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

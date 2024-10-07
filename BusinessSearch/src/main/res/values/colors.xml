@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#53A6F6</color>
+
+    <color name="search_27A5F9">@color/theme_color</color>
+    <color name="search_f4f4f4">#f4f4f4</color>
+    <color name="search_333333">#333333</color>
+    <color name="search_999999">#999999</color>
+    <color name="search_151515">#151515</color>
+    <color name="search_bg_color">#F4F4F4</color>
+    <color name="search_white">#ffffff</color>
+
+    <color name="search_drop_down_selected">#27a5f9</color>
+    <color name="search_drop_down_unselected">#333333</color>
+
+    <color name="search_mask_color">#88888888</color>
+    <color name="search_check_bg">#f2f2f2</color>
+    <color name="search_un_press_color">#9C27B0</color>
+    <color name="theme_color">@color/search_main_color</color>
+    <color name="search_theme_color">@color/theme_color</color>
+</resources>

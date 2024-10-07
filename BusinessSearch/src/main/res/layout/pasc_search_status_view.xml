@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/status_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/status_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_loading"
+            android:textColor="@color/search_999999"
+            android:textSize="@dimen/search_small_size" />
+
+        <ProgressBar
+            android:id="@+id/progress_footer"
+            android:layout_width="20dp"
+            android:indeterminateDrawable="@drawable/search_loading_drawable"
+            android:indeterminateOnly="true"
+            android:indeterminateBehavior="repeat"
+            android:layout_height="20dp"
+            android:layout_marginLeft="6dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/status_empty"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/search_empty_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="暂无搜索结果"
+            android:textColor="@color/search_999999"
+            android:textSize="@dimen/search_mid_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/status_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/search_error_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="网络搜索失败，请检查网络设置"
+            android:textColor="@color/search_999999"
+            android:textSize="@dimen/search_mid_size" />
+        <TextView
+            android:id="@+id/btn_footer_retry"
+            android:layout_width="116dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/search_retry"
+            android:textColor="@color/search_333333"
+            android:textSize="@dimen/search_big_size"
+            android:background="@drawable/search_white_round_bg"
+            android:layout_height="44dp" />
+    </LinearLayout>
+</FrameLayout>
